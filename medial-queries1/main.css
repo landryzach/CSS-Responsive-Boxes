@@ -1,3 +1,34 @@
 body {
-  background: blanchedalmond;
+  background: white;
+}
+
+* {
+  border: 1px solid black;
+  text-align: center;
+  color: rgb(212, 117, 0);
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header, aside  {
+  flex-grow: 1;
+}
+
+main {
+  flex-grow:3;
+}
+
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  header {
+    width: 100%;
 }
